@@ -1,0 +1,61 @@
+defaults:
+  - experiment: arid_mit
+  - model: model
+  - datamodule: video_datamodule
+  - trainer: default_trainer
+  - callbacks: default_callbacks
+  - logger: default_logger
+  - _self_
+
+seed: 42
+train: true
+test: true
+run_name: "hi"
+
+model:
+  _target_: src.video_module.VideoModel
+  trn_model:
+    num_frames: 16
+    num_bottleneck: 256
+  num_classes: 8
+  learning_rate: 0.01
+
+trainer:
+  _target_: pytorch_lightning.Trainer
+  max_epochs: 90
+  gpus: 1
+  precision: 16
+
+logger:
+  _target_: pytorch_lightning.loggers.WandbLogger
+  project: your_project_name  # Replace with your actual project name on Wandb
+  save_dir: null
+
+callbacks:
+  model_checkpoint:
+    _target_: pytorch_lightning.callbacks.ModelCheckpoint
+    monitor: "val_loss"
+    mode: "min"
+    save_top_k: 3
+    dirpath: null
+    filename: null
+
+solver:
+  lr: 0.01
+  weight_decay: 0.2
+  lr_warmup_steps: 3
+  
+extra:
+  temperature: 2.0
+  temperature_clip_reliability: 0.25
+  temperature_clip_collaborative: 0.01
+  scale: 4
+  prob_invert: 0.4
+  ema_decay: 0.999
+  scr: true 
+  min_weight: 0
+  max_weight: 0.6
+  mu_temp: 0.6
+  beta_temp: 0.02 
+  imp_fac: 0.4
+

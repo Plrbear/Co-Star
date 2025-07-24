@@ -1,0 +1,5 @@
+_target_: src.models.actionclip.ModifiedCLIPVisionModel
+num_frames: 16
+num_classes: 8
+
+

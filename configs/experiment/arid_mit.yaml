@@ -1,0 +1,19 @@
+defaults:
+  - /datamodule: video_datamodule
+  - /model: model
+  - /callbacks: default_callbacks
+  - /trainer: default_trainer
+  - /logger: default_logger
+  - _self_
+
+# Override or add additional configurations
+datamodule:
+  _target_: src.datamodules.video_datamodule.VideoDataModule
+  train_file: /home/amir/dallv/txt/daily_da/kinetics_daily_msda_train.txt
+  test_file: /home/amir/dallv/txt/daily_da/kinetics_daily_msda_test.txt
+
+
+extra:
+  dataset: arid_mit 
+  class_limit: 0
+  data_folder: null
