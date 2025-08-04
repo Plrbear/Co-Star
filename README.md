@@ -17,7 +17,7 @@ The `co-star.yaml` file can be used to create the conda environment with all dep
 
 Please refer to the sample bash script (`run.sh`) located in the `src` directory to start training.
 
-## Configuration Setup
+### Configuration Setup
 
 Before training, you need to configure the data paths:
 
@@ -25,7 +25,7 @@ Before training, you need to configure the data paths:
 
 2. **For new experiments**: You can create additional `.yaml` files in the `configs/experiment/` directory for your custom experiments. However, make sure to update the experiment name in `configs/train.yaml` accordingly, as it is currently set to `arid_mit`.
 
-## Quick Start
+### Quick Start
 
 ```bash
 # Navigate to src directory
