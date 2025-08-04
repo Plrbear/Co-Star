@@ -1,4 +1,5 @@
 # Co-Star: Collaborative Curriculum Self-Training with Adaptive Regularization for Source-Free Video Domain Adaptation
+
 <figure>
   <img src="src/co-star.png" alt="Co-star framework overview" width="600">
   <figcaption>
@@ -13,15 +14,3 @@ The `co-star.yaml` file can be used to create the conda environment with all dep
 ```bash
 conda env create -f co-star.yaml
 conda activate co-star
-
-# Training
-
-Please refer to the sample bash script (`run.sh`) located in the `src` directory to start training.
-
-## Configuration Setup
-
-Before training, you need to configure the data paths:
-
-1. **Update data paths**: Edit `configs/experiment/arid_mit.yaml` and change the paths to your local data directory.
-
-2. **For new experiments**: You can create additional `.yaml` files in the `configs/experiment/` directory for your custom experiments. However, make sure to update the experiment name in `configs/train.yaml` accordingly, as it is currently set to `arid_mit`.
