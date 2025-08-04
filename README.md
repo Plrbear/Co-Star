@@ -11,9 +11,7 @@
 
 The `co-star.yaml` file can be used to create the conda environment with all dependencies for training Co-STAR:
 
-```bash
-conda env create -f co-star.yaml
-conda activate co-star
+
 
 # Training
 
