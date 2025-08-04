@@ -9,8 +9,8 @@ defaults:
 # Override or add additional configurations
 datamodule:
   _target_: src.datamodules.video_datamodule.VideoDataModule
-  train_file: /home/amir/dallv/txt/daily_da/kinetics_daily_msda_train.txt
-  test_file: /home/amir/dallv/txt/daily_da/kinetics_daily_msda_test.txt
+  train_file: /home/amir/cos/txt/daily_da/kinetics_daily_msda_train.txt
+  test_file: /home/amir/cos/txt/daily_da/kinetics_daily_msda_test.txt
 
 
 extra:
