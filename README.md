@@ -9,4 +9,4 @@
 
 
 ## Training
-Please refer to the sample bash script located in the src directory to start training. Further details will be added soon.
+Please refer to the sample bash script (run.sh) located in the src directory to start training. Further details will be added soon.
