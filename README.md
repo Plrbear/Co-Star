@@ -6,7 +6,13 @@
   </figcaption>
 </figure>
 
+## Environment Setup
 
+The `co-star.yaml` file can be used to create the conda environment with all dependencies for training Co-STAR:
+
+```bash
+conda env create -f co-star.yaml
+conda activate co-star
 
 ## Training
 Please refer to the sample bash script (run.sh) located in the src directory to start training. Further details will be added soon.
