@@ -1,4 +1,5 @@
-# Co-Star: Collaborative Curriculum Self-Training with Adaptive Regularization for Source-Free Video Domain Adaptation
+
+# Co-Star: Collaborative Curriculum Self-Training with Adaptive Regularization for Source-Free Video Domain Adaptation (WACV 2026)
 
 <figure>
   <img src="src/co-star.png" alt="Co-star framework overview" width="600">
