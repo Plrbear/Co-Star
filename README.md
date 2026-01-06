@@ -6,7 +6,7 @@
 Without access to source data, Co-STAR achieves **state-of-the-art performance**
 across multiple SFUVDA benchmarks.
 
----
+
 
 ## Problem Setting
 
@@ -19,7 +19,7 @@ Key challenges include:
 - noisy pseudo-labels during self-training
 - overconfident but incorrect predictions that reinforce early errors
 
----
+
 
 ## Method Overview
 
@@ -54,7 +54,7 @@ Key challenges include:
    - Probabilistically adjusts sample weights to prevent confirmation bias
      and improve training stability.
 
----
+
 
 ## When Should You Use Co-STAR?
 
@@ -68,7 +68,7 @@ Key challenges include:
 - performance depends on CLIP zero-shot quality
 - not designed for real-time or online adaptation
 
----
+
 
 ## Environment Setup
 
