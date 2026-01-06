@@ -69,6 +69,19 @@ Key challenges include:
 
 
 
+## Code & Dependencies
+
+The code is implemented using commonly adopted research frameworks, including:
+
+- **PyTorch** and **PyTorch Lightning** for model definition and training
+- **Hydra** for configuration management
+- **Weights & Biases (wandb)** for experiment logging
+- **CLIP** for vision–language representations
+
+The training pipeline follows a configuration-driven setup to enable reproducible
+experiments across different datasets and settings.
+
+
 ## Environment Setup
 
 The `co-star.yaml` file can be used to create the conda environment with all
@@ -101,3 +114,5 @@ cd src
 
 # Run training script
 ./run.sh
+```
+
