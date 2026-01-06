@@ -79,7 +79,7 @@ dependencies required to train Co-STAR:
 ```bash
 conda env create -f co-star.yaml
 conda activate co-star
-
+```
 
 
 
