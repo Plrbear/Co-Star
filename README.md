@@ -32,7 +32,6 @@ Key challenges include:
     teacher and CLIP. A reliability-based curriculum dynamically balances cross-entropy
     and KL-divergence losses. Adaptive Curriculum Regularization (ACR) monitors
     prediction stability over time to mitigate overconfident and noisy pseudo-labels.
-    CLIP zero-shot predictions are pre-computed to reduce computational overhead.
   </figcaption>
 </figure>
 
