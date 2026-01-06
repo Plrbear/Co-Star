@@ -10,7 +10,7 @@ defaults:
 seed: 42
 train: true
 test: true
-run_name: "hi"
+run_name: "init_"
 
 model:
   _target_: src.video_module.VideoModel
