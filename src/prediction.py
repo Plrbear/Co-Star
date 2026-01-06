@@ -67,7 +67,7 @@ def main(cfg: DictConfig) -> None:
     convert_32(video_model)
 
     # Load the checkpoint and update the model's state dict
-    checkpoint_path = "/home/ubuntu/Amir/sfvda/trn/src/lightning_logs/version_p0k5a2w9/best_model.ckpt"  # Update this path
+    checkpoint_path = "/home/ubuntu/sfvda/trn/src/lightning_logs/version_p0k5a2w9/best_model.ckpt"  # Update this path (source model trained on source data
     log.info(f"Loading model from checkpoint: {checkpoint_path}")
     checkpoint = torch.load(checkpoint_path, map_location=lambda storage, loc: storage)
     video_model.load_state_dict(checkpoint['state_dict'], strict=False)
