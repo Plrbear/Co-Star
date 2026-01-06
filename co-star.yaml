@@ -1,4 +1,4 @@
-name: CO-STAR
+name: co-star
 channels:
   - conda-forge
   - defaults
