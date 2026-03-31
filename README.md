@@ -115,4 +115,7 @@ cd src
 # Run training script
 ./run.sh
 ```
+## Note
 
+- In the published paper, one of the CLIP backbones is mistakenly written as **ViT-B/14**. The released implementation uses **ViT-L/14**. The transformer results were included as an additional evaluation alongside **ResNet50**, rather than as a direct same-backbone comparison with prior **ViT-B/14** methods.*.
+- The source-domain training code is not included in the current release and will be added in a future update.
